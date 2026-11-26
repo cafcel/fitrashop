@@ -1,0 +1,42 @@
+/* pesanan saya */
+
+.pesanan { max-width: 820px; }
+
+.tab-pesanan { display: flex; gap: 8px; margin-bottom: 16px; }
+
+.tab-pesanan button {
+  padding: 7px 18px;
+  border: 1px solid var(--garis);
+  border-radius: 100px;
+  background: var(--putih);
+  font-size: 13px;
+}
+
+.tab-pesanan button.aktif { border-color: var(--hitam); background: var(--hitam); color: var(--putih); }
+
+.kartu-pesanan {
+  display: block;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  border: 1px solid var(--garis);
+  border-radius: 12px;
+  background: var(--putih);
+  transition: border-color 0.2s;
+}
+
+.kartu-pesanan:hover { border-color: var(--aksen); }
+
+.kp-atas { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; font-size: 13px; }
+
+.kp-isi { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; }
+.kp-foto { display: flex; gap: 6px; }
+.kp-foto img { width: 44px; height: 56px; border-radius: 6px; object-fit: cover; object-position: top; }
+.kp-info span { display: block; font-size: 14px; font-weight: 500; }
+.kp-info small, .kp-total small { display: block; font-size: 12px; color: var(--abu); }
+.kp-total { text-align: right; }
+.kp-total b { font-size: 15px; color: var(--aksen-gelap); }
+
+@media (max-width: 560px) {
+  .kp-isi { grid-template-columns: 1fr auto; }
+  .kp-foto { grid-column: 1 / -1; }
+}

@@ -1,0 +1,65 @@
+/* checkout */
+
+.checkout-isi {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  align-items: start;
+}
+
+.dua-kolom { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.info-ambil { padding: 10px 12px; border-radius: 8px; background: var(--aksen-muda); font-size: 13px; }
+
+.pilihan { display: grid; gap: 8px; }
+.pilihan.dua { grid-template-columns: 1fr 1fr; }
+.pilihan.bank { grid-template-columns: repeat(4, 1fr); margin-top: 10px; }
+
+.opsi {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border: 1px solid var(--garis);
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.opsi:hover { border-color: var(--aksen); }
+.opsi:has(input:checked) { border-color: var(--aksen); background: var(--aksen-muda); }
+.opsi input { accent-color: var(--aksen); }
+.opsi span { flex: 1; }
+.opsi b { display: block; font-weight: 500; }
+.opsi small { display: block; font-size: 12px; color: var(--abu); }
+.opsi em { font-style: normal; font-weight: 600; }
+.opsi img { height: 22px; width: auto; }
+
+.ringkasan-co {
+  position: sticky;
+  top: 80px;
+  padding: 18px 20px;
+  border: 1px solid var(--garis);
+  border-radius: 12px;
+  background: var(--putih);
+}
+
+.ringkasan-co h2 { margin-bottom: 12px; font-size: 16px; }
+.ringkasan-co dl div { display: flex; justify-content: space-between; padding: 6px 0; font-size: 13px; color: var(--abu); }
+.ringkasan-co dd { color: var(--hitam); }
+.ringkasan-co .total { margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--garis); font-weight: 600; color: var(--hitam); }
+.ringkasan-co .total dd { font-size: 17px; color: var(--aksen); }
+.ringkasan-co .tombol { width: 100%; margin-top: 14px; padding: 11px; }
+.kembali { display: block; margin-top: 10px; font-size: 12px; text-align: center; color: var(--abu); }
+.kembali:hover { color: var(--aksen); }
+
+@media (max-width: 900px) {
+  .checkout-isi { grid-template-columns: 1fr; }
+  .ringkasan-co { position: static; }
+}
+
+@media (max-width: 560px) {
+  .dua-kolom, .pilihan.dua { grid-template-columns: 1fr; }
+  .pilihan.bank { grid-template-columns: 1fr 1fr; }
+}

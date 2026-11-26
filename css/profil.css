@@ -1,0 +1,171 @@
+/* profil */
+
+.profil { padding-top: 28px; padding-bottom: 48px; }
+
+.profil-isi {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.profil-samping {
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--hitam);
+  color: var(--putih);
+}
+
+.profil-ringkas {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #333;
+}
+
+.profil-ringkas b { display: block; font-size: 14px; }
+.profil-ringkas small { display: block; font-size: 11px; color: #bdb5ab; word-break: break-all; }
+
+.foto-profil {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--aksen);
+  color: var(--putih);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-size: cover;
+  background-position: center;
+}
+
+.foto-profil.besar { width: 84px; height: 84px; font-size: 36px; }
+
+.profil-menu { display: grid; gap: 4px; margin-bottom: 14px; }
+
+.profil-menu button {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: #d9d2c9;
+  font-size: 13px;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.profil-menu a {
+  padding: 9px 12px;
+  border-radius: 8px;
+  color: #d9d2c9;
+  font-size: 13px;
+}
+
+.profil-menu a:hover { background: #222; }
+.profil-menu button:hover { background: #222; }
+.profil-menu button.aktif { background: var(--aksen); color: var(--putih); }
+
+.tombol-keluar-besar {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background: none;
+  color: var(--putih);
+  font-size: 13px;
+}
+
+.tombol-keluar-besar:hover { background: var(--putih); color: var(--hitam); }
+
+.profil-kotak {
+  min-height: 360px;
+  padding: 22px 26px;
+  border: 1px solid var(--garis);
+  border-radius: 12px;
+  background: var(--putih);
+}
+
+.profil-kepala {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.profil-kepala h2 { font-family: "Cormorant Garamond", serif; font-size: 24px; }
+
+.profil-atas { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+
+.tombol-kecil {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid var(--hitam);
+  border-radius: 100px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tombol-kecil:hover { background: var(--hitam); color: var(--putih); }
+.catatan { margin-top: 6px; font-size: 12px; color: var(--abu); }
+
+.data-akun div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--garis);
+  font-size: 14px;
+}
+
+.data-akun dt { color: var(--abu); }
+.data-akun dd { font-weight: 500; }
+.data-akun dd.kosong { color: #a9a39b; font-weight: 400; font-style: italic; }
+
+.form-profil { max-width: 460px; }
+.form-profil .field { margin-bottom: 14px; }
+.form-profil label { display: block; margin-bottom: 5px; font-size: 13px; font-weight: 500; }
+
+.form-profil input,
+.form-profil textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d6cfc6;
+  border-radius: 8px;
+  background: var(--putih);
+  font: inherit;
+  font-size: 14px;
+}
+
+.form-profil input:focus,
+.form-profil textarea:focus { outline: none; border-color: var(--aksen); }
+.form-profil input:disabled { background: #f3efe9; color: var(--abu); }
+.form-profil .salah { border-color: #c0392b; }
+.form-profil .pesan-error { margin-top: 4px; font-size: 12px; color: #c0392b; }
+
+.baris-tombol { display: flex; gap: 10px; }
+.baris-tombol .tombol { padding: 9px 22px; }
+.tombol-garis { border: 1px solid var(--hitam); background: none; color: var(--hitam); }
+.tombol-garis:hover { background: var(--hitam); color: var(--putih); }
+
+.pesan-sukses-profil { margin-top: 14px; font-size: 13px; color: #2f7d4f; }
+
+.kosong-kecil { padding: 40px 0; text-align: center; color: var(--abu); }
+.kosong-kecil p { margin-bottom: 14px; }
+.kosong-kecil .tombol { padding: 9px 22px; }
+
+.pesanan-item { padding: 12px 0; border-bottom: 1px solid var(--garis); display: flex; justify-content: space-between; gap: 12px; font-size: 13px; }
+
+.tabel-ukuran { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 13px; }
+.tabel-ukuran th, .tabel-ukuran td { padding: 9px 12px; border-bottom: 1px solid var(--garis); text-align: left; }
+.tabel-ukuran th { background: var(--krem); font-weight: 500; }
+
+@media (max-width: 800px) {
+  .profil-isi { grid-template-columns: 1fr; }
+  .data-akun div { grid-template-columns: 110px 1fr; }
+  .profil-kotak { padding: 18px; }
+}

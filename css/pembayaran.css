@@ -1,0 +1,60 @@
+/* pembayaran */
+
+.pembayaran { max-width: 820px; }
+
+.kotak.atas { display: grid; grid-template-columns: 240px 1fr; padding: 0; overflow: hidden; }
+
+.jumlah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  padding: 22px;
+  background: var(--aksen-gelap);
+  color: var(--putih);
+}
+
+.jumlah span { font-size: 13px; opacity: 0.85; }
+.jumlah b { font-size: 24px; }
+.jumlah small { font-size: 12px; opacity: 0.8; }
+
+.tujuan { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 18px 24px; }
+.bank-nama { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+.bank-nama img { height: 28px; width: auto; }
+
+.rekening { position: relative; display: grid; gap: 2px; padding-right: 70px; }
+.rekening span { font-size: 12px; color: var(--abu); }
+.rekening b { font-size: 18px; letter-spacing: 0.03em; color: var(--aksen-gelap); }
+.rekening small { font-size: 12px; color: var(--abu); }
+
+.tombol-salin {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  padding: 5px 14px;
+  border: 1px solid var(--hitam);
+  border-radius: 100px;
+  background: none;
+  font-size: 12px;
+}
+
+.tombol-salin:hover { background: var(--hitam); color: var(--putih); }
+
+.qr-kotak { display: flex; align-items: center; gap: 16px; }
+.qr { width: 120px; height: 120px; padding: 6px; border: 1px solid var(--garis); border-radius: 8px; background: var(--putih); }
+.qr-kotak small { max-width: 160px; font-size: 12px; color: var(--abu); }
+
+.panduan { padding-left: 18px; font-size: 13px; }
+.panduan li { padding: 4px 0; }
+
+.selesai-bayar { display: flex; justify-content: flex-end; gap: 10px; }
+.selesai-bayar .tombol { padding: 10px 24px; }
+
+.kotak.sukses { text-align: center; }
+.kotak.sukses p { margin-bottom: 14px; font-size: 13px; color: var(--abu); }
+.kotak.sukses .tombol { padding: 10px 24px; }
+
+@media (max-width: 640px) {
+  .kotak.atas { grid-template-columns: 1fr; }
+  .tujuan { flex-direction: column; align-items: flex-start; }
+}
