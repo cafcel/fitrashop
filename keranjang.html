@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/keranjang.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah">
+    <h1 class="judul-halaman">Keranjang Belanja</h1>
+
+    <div class="keranjang" id="keranjang">
+      <section class="daftar-keranjang" id="daftar-keranjang"></section>
+
+      <aside class="ringkasan" id="ringkasan">
+        <h2>Ringkasan</h2>
+        <div class="baris-ringkasan"><span id="teks-jumlah">Subtotal</span><span id="subtotal"></span></div>
+        <div class="baris-ringkasan total"><span>Total</span><strong id="total"></strong></div>
+        <p class="catatan-ringkasan">Biaya pengiriman dihitung saat checkout.</p>
+        <button class="tombol tombol-hitam tombol-penuh" id="tombol-checkout">Checkout</button>
+        <p class="info-masuk" id="info-masuk" hidden></p>
+        <a href="katalog.html" class="lanjut-belanja">Lanjut belanja</a>
+      </aside>
+    </div>
+
+    <div class="keranjang-kosong" id="keranjang-kosong" hidden>
+      <svg class="ikon"><use href="#ikon-tas"/></svg>
+      <h2>Keranjang masih kosong</h2>
+      <p>Yuk, pilih pakaian favoritmu dulu.</p>
+      <a href="katalog.html" class="tombol tombol-hitam">Lihat Katalog</a>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/keranjang.js"></script>
+</body>
+</html>

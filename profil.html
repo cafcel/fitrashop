@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/profil.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah profil">
+    <h1 class="judul-halaman kecil">Profil Saya</h1>
+
+    <div class="profil-isi">
+
+      <!-- samping -->
+      <aside class="profil-samping">
+        <div class="profil-ringkas">
+          <div class="foto-profil" id="foto-samping"></div>
+          <div>
+            <b id="nama-samping"></b>
+            <small id="email-samping"></small>
+          </div>
+        </div>
+        <nav class="profil-menu" id="profil-menu">
+          <button data-tab="akun" class="aktif">Informasi Akun</button>
+          <a href="pesanan.html" class="menu-link">Riwayat Pesanan</a>
+          <button data-tab="ukuran">Panduan Ukuran</button>
+        </nav>
+        <button class="tombol-keluar-besar" id="tombol-logout">Keluar dari Akun</button>
+      </aside>
+
+      <!-- isi -->
+      <section class="profil-kotak">
+
+        <div class="tab" id="tab-akun">
+          <div class="profil-kepala">
+            <h2>Informasi Akun</h2>
+            <button class="tombol-teks" id="tombol-edit">Edit Profil</button>
+          </div>
+
+          <div class="profil-atas">
+            <div class="foto-profil besar" id="foto-besar"></div>
+            <div id="aksi-foto" hidden>
+              <label class="tombol-kecil" for="input-foto">Ganti Foto</label>
+              <input type="file" id="input-foto" accept="image/*" hidden>
+              <p class="catatan">JPG atau PNG, maksimal 1 MB.</p>
+            </div>
+          </div>
+
+          <!-- tampilan baca -->
+          <dl class="data-akun" id="data-akun">
+            <div><dt>Nama</dt><dd id="v-nama"></dd></div>
+            <div><dt>E-mail</dt><dd id="v-email"></dd></div>
+            <div><dt>Nomor Telepon</dt><dd id="v-telepon"></dd></div>
+            <div><dt>Alamat</dt><dd id="v-alamat"></dd></div>
+            <div><dt>Status Akun</dt><dd>Pelanggan</dd></div>
+            <div><dt>Bergabung</dt><dd id="v-gabung"></dd></div>
+          </dl>
+
+          <!-- formulir ubah -->
+          <form class="form-profil" id="form-profil" novalidate hidden>
+            <div class="field">
+              <label for="f-nama">Nama</label>
+              <input type="text" id="f-nama">
+              <p class="pesan-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">E-mail</label>
+              <input type="email" id="f-email" disabled>
+            </div>
+            <div class="field">
+              <label for="f-telepon">Nomor Telepon</label>
+              <input type="tel" id="f-telepon" placeholder="08xxxxxxxxxx">
+              <p class="pesan-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-alamat">Alamat</label>
+              <textarea id="f-alamat" rows="3" placeholder="Jalan, nomor, kota, kode pos"></textarea>
+              <p class="pesan-error"></p>
+            </div>
+            <div class="baris-tombol">
+              <button type="submit" class="tombol tombol-hitam">Simpan</button>
+              <button type="button" class="tombol tombol-garis" id="tombol-batal">Batal</button>
+            </div>
+          </form>
+          <p class="pesan-sukses-profil" id="pesan-simpan" hidden></p>
+        </div>
+
+        <div class="tab" id="tab-ukuran" hidden>
+          <div class="profil-kepala"><h2>Panduan Ukuran</h2></div>
+          <p class="catatan">Ukuran dalam cm. Pilih ukuran sesuai lingkar badan Anda.</p>
+          <table class="tabel-ukuran">
+            <thead><tr><th>Ukuran</th><th>Lingkar Dada</th><th>Lingkar Pinggang</th><th>Lingkar Panggul</th></tr></thead>
+            <tbody>
+              <tr><td>S</td><td>86 - 92</td><td>66 - 72</td><td>90 - 96</td></tr>
+              <tr><td>M</td><td>90 - 96</td><td>70 - 76</td><td>94 - 100</td></tr>
+              <tr><td>L</td><td>96 - 102</td><td>76 - 82</td><td>100 - 106</td></tr>
+              <tr><td>XL</td><td>102 - 108</td><td>82 - 88</td><td>106 - 112</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-akun.js"></script>
+  <script src="js/profil.js"></script>
+</body>
+</html>

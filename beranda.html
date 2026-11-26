@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - FITRA SHOP</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/beranda.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah beranda">
+
+    <!-- sapaan -->
+    <section class="sapaan">
+      <div class="sapaan-teks">
+        <p class="eyebrow">SELAMAT DATANG KEMBALI</p>
+        <h1 id="sapa-nama">Halo!</h1>
+        <p class="sapaan-deskripsi">FITRA SHOP menghadirkan pakaian modern dengan bahan nyaman dan potongan rapi. Pilih gayamu dan tampil percaya diri setiap hari.</p>
+        <a href="katalog.html" class="tombol tombol-aksen">Lihat Katalog</a>
+      </div>
+      <div class="sapaan-kartu">
+        <a href="keranjang.html" class="info-kecil">
+          <svg class="ikon"><use href="#ikon-tas"/></svg>
+          <b id="info-keranjang">0</b>
+          <span>Barang di keranjang</span>
+        </a>
+        <a href="pesanan.html" class="info-kecil">
+          <svg class="ikon"><use href="#ikon-atasan"/></svg>
+          <b id="info-pesanan">0</b>
+          <span>Pesanan berjalan</span>
+        </a>
+        <a href="profil.html" class="info-kecil">
+          <svg class="ikon"><use href="#ikon-akun"/></svg>
+          <b>Profil</b>
+          <span>Atur data akun</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- kategori -->
+    <section class="blok">
+      <h2 class="judul-blok">Kategori Pakaian</h2>
+      <div class="kategori-kotak">
+        <a href="katalog.html?kategori=atasan"><svg class="ikon"><use href="#ikon-atasan"/></svg><span>Atasan</span></a>
+        <a href="katalog.html?kategori=bawahan"><svg class="ikon"><use href="#ikon-bawahan"/></svg><span>Bawahan</span></a>
+        <a href="katalog.html?kategori=outer"><svg class="ikon"><use href="#ikon-outer"/></svg><span>Outer</span></a>
+        <a href="katalog.html?kategori=dress-tunik"><svg class="ikon"><use href="#ikon-dress"/></svg><span>Dress &amp; Tunik</span></a>
+      </div>
+    </section>
+
+    <!-- produk -->
+    <section class="blok">
+      <div class="judul-baris">
+        <h2 class="judul-blok">Koleksi Pilihan</h2>
+        <a href="katalog.html" class="tombol-teks">Lihat semua</a>
+      </div>
+      <div class="grid-produk" id="grid-produk"></div>
+    </section>
+
+    <!-- info -->
+    <section class="blok info-fitra">
+      <div>
+        <h3>Pengerjaan Rapi</h3>
+        <p>Setiap pakaian dikerjakan dengan teliti oleh butik kami.</p>
+      </div>
+      <div>
+        <h3>Pembayaran Mudah</h3>
+        <p>Pilih QRIS atau transfer bank sesuai kebutuhan Anda.</p>
+      </div>
+      <div>
+        <h3>Pantau Pesanan</h3>
+        <p>Lihat status pengerjaan pesanan langsung dari akun Anda.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-pesanan.js"></script>
+  <script src="js/beranda.js"></script>
+</body>
+</html>

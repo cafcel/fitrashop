@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/pembayaran.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah pembayaran">
+    <h1 class="judul-halaman">Pembayaran</h1>
+
+    <div class="tidak-ada" id="tidak-ada" hidden>
+      <p>Pesanan tidak ditemukan.</p>
+      <a href="pesanan.html" class="tombol tombol-hitam">Lihat Pesanan Saya</a>
+    </div>
+
+    <div id="isi-bayar" hidden>
+
+      <section class="kotak atas">
+        <div class="jumlah">
+          <span>Jumlah Pembayaran</span>
+          <b id="b-total"></b>
+          <small id="b-kode"></small>
+        </div>
+        <div class="tujuan" id="b-tujuan"></div>
+      </section>
+
+      <section class="kotak">
+        <h2>Panduan Pembayaran</h2>
+        <ol class="panduan" id="b-panduan"></ol>
+      </section>
+
+      <div class="selesai-bayar" id="belum-bayar">
+        <a href="detail-pesanan.html" class="tombol tombol-garis" id="bayar-nanti">Bayar Nanti</a>
+        <button class="tombol tombol-aksen" id="tombol-sudah">Saya Sudah Bayar</button>
+      </div>
+
+      <section class="kotak sukses" id="sudah-bayar" hidden>
+        <h2>Terima kasih!</h2>
+        <p>Pembayaran Anda sudah kami catat. Pesanan akan segera dikonfirmasi oleh butik.</p>
+        <a href="detail-pesanan.html" class="tombol tombol-hitam" id="lihat-status">Lihat Status Pesanan</a>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-pesanan.js"></script>
+  <script src="js/pembayaran.js"></script>
+</body>
+</html>

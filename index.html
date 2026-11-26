@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITRA SHOP - Tampil Percaya Diri Setiap Hari</title>
+  <meta name="description" content="Butik pakaian modern FITRA SHOP: atasan, bawahan, outer, dress &amp; tunik.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- navbar dibuat oleh js/layout.js -->
+
+  <main>
+
+    <!-- banner geser -->
+    <section class="hero" aria-label="Promo">
+      <div class="slides" id="slides">
+
+        <article class="slide slide-hitam">
+          <div class="slide-isi">
+            <div class="slide-teks">
+              <p class="eyebrow">KOLEKSI OUTER</p>
+              <h2>Hangat dan Rapi untuk Setiap Hari</h2>
+              <p class="slide-deskripsi">Jaket, blazer, dan coat pilihan dengan potongan yang mudah dipadukan.</p>
+              <a href="katalog.html?kategori=outer" class="tombol tombol-aksen">Lihat Outer</a>
+            </div>
+            <div class="kartu-foto">
+              <img src="images/produk/jaket-batik.jpg" alt="Jaket batik cokelat">
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-krem">
+          <div class="slide-isi">
+            <div class="slide-teks">
+              <p class="eyebrow">DRESS &amp; TUNIK</p>
+              <h2>Elegan di Setiap Kesempatan</h2>
+              <p class="slide-deskripsi">Potongan rapi dan bahan nyaman untuk kerja, kuliah, hingga acara spesial.</p>
+              <a href="katalog.html?kategori=dress-tunik" class="tombol tombol-hitam">Lihat Koleksi</a>
+            </div>
+            <div class="kartu-foto">
+              <img src="images/produk/dress-putih.jpg" alt="Dress putih berkerah">
+            </div>
+          </div>
+        </article>
+
+        <article class="slide slide-promo">
+          <div class="slide-isi">
+            <div class="slide-teks">
+              <p class="eyebrow">PROMO AKHIR TAHUN</p>
+              <h2>Diskon hingga 30% untuk Koleksi Pilihan</h2>
+              <p class="slide-deskripsi">Waktunya memperbarui lemari dengan gaya favorit Anda.</p>
+              <a href="katalog.html" class="tombol tombol-putih">Belanja Sekarang</a>
+            </div>
+            <div class="angka-besar" aria-hidden="true">30<span>%</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <button class="panah panah-kiri" id="panah-kiri" aria-label="Slide sebelumnya"><svg class="ikon"><use href="#ikon-kiri"/></svg></button>
+      <button class="panah panah-kanan" id="panah-kanan" aria-label="Slide berikutnya"><svg class="ikon"><use href="#ikon-kanan"/></svg></button>
+      <div class="titik" id="titik"></div>
+    </section>
+
+
+    <!-- kategori -->
+    <section class="bagian" id="kategori">
+      <div class="wadah">
+        <h2 class="judul-bagian">Belanja Berdasarkan Kategori</h2>
+
+        <div class="kategori">
+          <a href="katalog.html?kategori=atasan" class="kategori-item">
+            <span class="lingkaran"><svg class="ikon"><use href="#ikon-atasan"/></svg></span>
+            <span class="kategori-nama">Atasan</span>
+          </a>
+          <a href="katalog.html?kategori=bawahan" class="kategori-item">
+            <span class="lingkaran"><svg class="ikon"><use href="#ikon-bawahan"/></svg></span>
+            <span class="kategori-nama">Bawahan</span>
+          </a>
+          <a href="katalog.html?kategori=outer" class="kategori-item">
+            <span class="lingkaran"><svg class="ikon"><use href="#ikon-outer"/></svg></span>
+            <span class="kategori-nama">Outer</span>
+          </a>
+          <a href="katalog.html?kategori=dress-tunik" class="kategori-item">
+            <span class="lingkaran"><svg class="ikon"><use href="#ikon-dress"/></svg></span>
+            <span class="kategori-nama">Dress &amp; Tunik</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- produk terbaru -->
+    <section class="bagian bagian-produk" id="produk">
+      <div class="wadah">
+        <div class="kepala-produk">
+          <div>
+            <h2 class="judul-bagian rata-kiri">Koleksi Pilihan</h2>
+            <p class="info-filter">Pakaian terbaru dan terlaris di FITRA SHOP</p>
+          </div>
+          <a href="katalog.html" class="tombol-teks">Lihat semua</a>
+        </div>
+
+        <div class="grid-produk" id="grid-produk"></div>
+      </div>
+    </section>
+
+
+    <!-- tentang kami -->
+    <section class="bagian bagian-tentang" id="tentang">
+      <div class="wadah tentang">
+
+        <div class="tentang-kiri">
+          <h2>Belanja Pakaian Modern di FITRA SHOP</h2>
+          <span class="garis-aksen"></span>
+        </div>
+
+        <div class="tentang-kanan">
+          <p>FITRA SHOP hadir untuk membantu Anda menemukan pakaian yang sesuai dengan gaya dan kebutuhan sehari-hari. Kami menyediakan berbagai pilihan pakaian dengan desain modern, nyaman, dan menarik untuk melengkapi penampilan Anda.</p>
+          <p>Anda dapat menemukan kaus, kemeja, blouse, celana, jeans, hoodie, jaket, hingga tunik yang mudah dipadukan. Setiap produk dilengkapi informasi seperti foto, harga, ukuran, dan deskripsi agar pelanggan lebih mudah menentukan pilihan.</p>
+          <p>Melalui website FITRA SHOP, pelanggan dapat melihat katalog pakaian, memilih produk, melakukan pemesanan secara online, serta memantau status pesanan tanpa harus datang langsung ke butik. Untuk pakaian dengan desain khusus, tersedia juga layanan konsultasi custom melalui WhatsApp.</p>
+          <p><strong>Temukan pakaian favoritmu dan tampil percaya diri setiap hari bersama FITRA SHOP!</strong></p>
+        </div>
+
+        <div class="tentang-kategori">
+          <div class="info-kategori">
+            <svg class="ikon"><use href="#ikon-atasan"/></svg>
+            <h3>Atasan</h3>
+            <p>Kaus, kemeja, blouse, dan polo shirt.</p>
+          </div>
+          <div class="info-kategori">
+            <svg class="ikon"><use href="#ikon-bawahan"/></svg>
+            <h3>Bawahan</h3>
+            <p>Celana panjang, kulot, cargo, dan rok.</p>
+          </div>
+          <div class="info-kategori">
+            <svg class="ikon"><use href="#ikon-outer"/></svg>
+            <h3>Outer</h3>
+            <p>Hoodie, jaket, blazer, dan cardigan.</p>
+          </div>
+          <div class="info-kategori">
+            <svg class="ikon"><use href="#ikon-dress"/></svg>
+            <h3>Dress &amp; Tunik</h3>
+            <p>Dress kasual, long dress, dan tunik.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

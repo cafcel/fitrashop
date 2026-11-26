@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesanan Saya - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/pesanan.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah pesanan">
+    <h1 class="judul-halaman">Pesanan Saya</h1>
+
+    <div class="tab-pesanan" id="tab-pesanan">
+      <button data-saring="semua" class="aktif">Semua</button>
+      <button data-saring="jalan">Berjalan</button>
+      <button data-saring="selesai">Selesai</button>
+    </div>
+
+    <div id="daftar-pesanan"></div>
+
+    <div class="pesanan-kosong" id="pesanan-kosong" hidden>
+      <p>Belum ada pesanan.</p>
+      <a href="katalog.html" class="tombol tombol-hitam">Mulai Belanja</a>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-pesanan.js"></script>
+  <script src="js/pesanan.js"></script>
+</body>
+</html>

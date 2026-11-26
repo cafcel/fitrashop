@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah checkout">
+    <h1 class="judul-halaman">Checkout</h1>
+
+    <div class="checkout-kosong" id="checkout-kosong" hidden>
+      <p>Keranjang masih kosong.</p>
+      <a href="katalog.html" class="tombol tombol-hitam">Pilih Pakaian</a>
+    </div>
+
+    <form class="checkout-isi" id="form-checkout" novalidate>
+
+      <div class="kolom-kiri">
+
+        <section class="kotak">
+          <h2>Informasi Penerima</h2>
+          <div class="dua-kolom">
+            <div class="field">
+              <label for="nama">Nama</label>
+              <input type="text" id="nama">
+              <p class="pesan-error"></p>
+            </div>
+            <div class="field">
+              <label for="telepon">Nomor Telepon</label>
+              <input type="tel" id="telepon" placeholder="08xxxxxxxxxx">
+              <p class="pesan-error"></p>
+            </div>
+          </div>
+          <div class="field" id="field-alamat">
+            <label for="alamat">Alamat Pengiriman</label>
+            <textarea id="alamat" rows="3" placeholder="Jalan, nomor, kota, kode pos"></textarea>
+            <p class="pesan-error"></p>
+          </div>
+          <p class="info-ambil" id="info-ambil" hidden>Ambil pesanan di butik: Jl. Kolonel Sugiono No. 32, Malang.</p>
+        </section>
+
+        <section class="kotak">
+          <h2>Produk Dipesan</h2>
+          <div id="daftar-pesan"></div>
+        </section>
+
+        <section class="kotak">
+          <h2>Opsi Pengiriman</h2>
+          <div class="pilihan" id="pilihan-kirim"></div>
+        </section>
+
+        <section class="kotak">
+          <h2>Metode Pembayaran</h2>
+          <div class="pilihan dua" id="pilihan-bayar">
+            <label class="opsi"><input type="radio" name="metode" value="qris"><span><b>QRIS</b><small>Scan dengan e-wallet atau m-banking</small></span></label>
+            <label class="opsi"><input type="radio" name="metode" value="transfer"><span><b>Transfer Bank</b><small>BCA, BNI, BRI, Mandiri</small></span></label>
+          </div>
+          <div class="pilihan bank" id="pilihan-bank" hidden></div>
+          <p class="pesan-error" id="error-bayar"></p>
+        </section>
+
+      </div>
+
+      <aside class="ringkasan-co">
+        <h2>Ringkasan</h2>
+        <dl>
+          <div><dt>Subtotal Produk</dt><dd id="r-subtotal">Rp 0</dd></div>
+          <div><dt>Biaya Pengiriman</dt><dd id="r-ongkir">Rp 0</dd></div>
+          <div><dt>Biaya Layanan</dt><dd id="r-layanan">Rp 0</dd></div>
+          <div class="total"><dt>Total Pembayaran</dt><dd id="r-total">Rp 0</dd></div>
+        </dl>
+        <button type="submit" class="tombol tombol-aksen" id="tombol-pesan">Buat Pesanan</button>
+        <a href="keranjang.html" class="kembali">Kembali ke keranjang</a>
+      </aside>
+
+    </form>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-pesanan.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

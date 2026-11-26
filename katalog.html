@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/katalog.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah katalog">
+
+    <div class="katalog-atas">
+      <h1 class="judul-halaman">Katalog Pakaian</h1>
+      <form class="cari-besar" id="form-cari">
+        <svg class="ikon"><use href="#ikon-cari"/></svg>
+        <input type="search" id="input-cari" placeholder="Cari pakaian..." aria-label="Cari pakaian">
+      </form>
+    </div>
+
+    <div class="katalog-isi">
+
+      <aside class="samping">
+        <h2>Kategori Pakaian</h2>
+        <div class="daftar-kategori" id="daftar-kategori"></div>
+        <p class="jaminan">Belanja aman, privasi terjamin 100%</p>
+      </aside>
+
+      <section>
+        <div class="bar-hasil">
+          <p id="jumlah-hasil"></p>
+          <select id="urut" aria-label="Urutkan">
+            <option value="rekomendasi">Rekomendasi</option>
+            <option value="terbaru">Terbaru</option>
+            <option value="murah">Harga terendah</option>
+            <option value="mahal">Harga tertinggi</option>
+            <option value="rating">Rating tertinggi</option>
+          </select>
+        </div>
+
+        <div class="grid-produk grid-katalog" id="grid-produk"></div>
+
+        <div class="kosong" id="produk-kosong" hidden>
+          <p>Produk tidak ditemukan.</p>
+          <button class="tombol-teks" id="reset-filter">Tampilkan semua produk</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/katalog.js"></script>
+</body>
+</html>

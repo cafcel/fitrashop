@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Masuk - FITRASHOP</title>
+</head>
+<body>
+  <main class="halaman">
+
+    <!-- ===== PANEL HITAM: logo dan slogan ===== -->
+    <section class="panel-merek">
+      <a href="index.html" class="logo">FITRASHOP<span>.</span></a>
+
+      <div class="slogan">
+        <h2>Tampil <em>Percaya Diri</em><br>Setiap Hari</h2>
+        <p>Koleksi butik pilihan untuk gaya Anda.</p>
+      </div>
+
+      <small>&copy; 2026 FITRASHOP</small>
+    </section>
+
+    <!-- ===== PANEL PUTIH: form login ===== -->
+    <section class="panel-form">
+      <div class="kotak-form">
+        <h1>Masuk</h1>
+        <p class="deskripsi">Selamat datang kembali. Silakan masuk ke akun Anda.</p>
+
+        <form id="form-login" novalidate>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="nama@email.com">
+            <p class="pesan-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="sandi">Kata sandi</label>
+            <div class="input-sandi">
+              <input type="password" id="sandi" placeholder="Masukkan kata sandi">
+              <button type="button" class="toggle-sandi">Lihat</button>
+            </div>
+            <p class="pesan-error"></p>
+          </div>
+
+          <a href="#" class="tautan lupa">Lupa kata sandi?</a>
+
+          <button type="submit" class="tombol">Masuk</button>
+        </form>
+
+        <p class="footer-form">Belum punya akun? <a href="register.html" class="tautan">Daftar</a></p>
+      </div>
+    </section>
+
+  </main>
+  <script src="js/fungsi-akun.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

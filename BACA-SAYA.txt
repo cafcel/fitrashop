@@ -1,0 +1,29 @@
+FITRASHOP - struktur file
+
+Setiap halaman punya CSS dan JS sendiri (nama sama dengan halamannya).
+Hanya hal yang dipakai banyak halaman dipisah ke file "umum / fungsi".
+
+Halaman      CSS               JS
+index        index.css         index.js
+beranda      beranda.css       beranda.js
+katalog      katalog.css       katalog.js
+produk       produk.css        produk.js
+keranjang    keranjang.css     keranjang.js
+checkout     checkout.css      checkout.js
+pembayaran   pembayaran.css    pembayaran.js
+pesanan      pesanan.css       pesanan.js
+detail-pesanan detail-pesanan.css detail-pesanan.js
+profil       profil.css        profil.js
+login        login.css         login.js
+register     register.css      register.js
+
+File bersama:
+css/umum.css            navbar, footer, tombol, kartu produk, form
+js/data.js              data produk + fungsi bantu
+js/fungsi-keranjang.js  simpan / ubah keranjang
+js/fungsi-akun.js       akun, masuk (login, register, profil)
+js/fungsi-pesanan.js    pesanan, status, bank, ongkir
+js/layout.js            navbar dan footer otomatis
+
+Buka dengan index.html.
+Status pesanan hanya bisa diubah admin nanti, lewat ubahStatusPesanan(kode, tahap).

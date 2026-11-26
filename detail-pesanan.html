@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Pesanan - FITRA SHOP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/umum.css">
+  <link rel="stylesheet" href="css/detail-pesanan.css">
+</head>
+<body class="halaman-dalam">
+
+  <main class="wadah detail-pesanan">
+    <a href="pesanan.html" class="kembali-link">&larr; Semua pesanan</a>
+
+    <div class="tidak-ada" id="tidak-ada" hidden>
+      <p>Pesanan tidak ditemukan.</p>
+      <a href="pesanan.html" class="tombol tombol-hitam">Lihat Pesanan Saya</a>
+    </div>
+
+    <div id="isi-detail" hidden>
+      <div class="kepala-detail">
+        <div>
+          <h1 id="d-kode"></h1>
+          <p id="d-tanggal"></p>
+        </div>
+        <span class="status" id="d-status"></span>
+      </div>
+
+      <div class="detail-grid">
+        <div class="kolom-kiri">
+
+          <section class="kotak">
+            <h2>Status Pengerjaan</h2>
+            <ol class="garis-waktu" id="d-waktu"></ol>
+          </section>
+
+          <section class="kotak">
+            <h2>Produk Dipesan</h2>
+            <div id="d-produk"></div>
+          </section>
+
+        </div>
+
+        <div class="kolom-kanan">
+
+          <section class="kotak">
+            <h2 id="d-judul-alamat">Pengiriman</h2>
+            <p class="baris-info"><b id="d-nama"></b><br><span id="d-telepon"></span></p>
+            <p class="baris-info" id="d-alamat"></p>
+            <p class="baris-info kecil" id="d-kirim"></p>
+          </section>
+
+          <section class="kotak">
+            <h2>Rincian Pembayaran</h2>
+            <dl class="rincian">
+              <div><dt>Subtotal Produk</dt><dd id="d-subtotal"></dd></div>
+              <div><dt>Biaya Pengiriman</dt><dd id="d-ongkir"></dd></div>
+              <div><dt>Biaya Layanan</dt><dd id="d-layanan"></dd></div>
+              <div class="total"><dt>Total</dt><dd id="d-total"></dd></div>
+            </dl>
+            <p class="baris-info kecil" id="d-metode"></p>
+            <a href="#" class="tombol tombol-aksen" id="d-bayar" hidden>Lanjut Bayar</a>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/fungsi-keranjang.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/fungsi-pesanan.js"></script>
+  <script src="js/detail-pesanan.js"></script>
+</body>
+</html>
